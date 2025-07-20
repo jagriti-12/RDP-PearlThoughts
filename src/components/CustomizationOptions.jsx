@@ -33,7 +33,10 @@ export default function CustomizationOptions() {
           type="number"
           min="1"
           value={interval}
-          onChange={(e) => setInterval(Number(e.target.value))}
+          onChange={(e) => {
+            const val = Math.max(1, Number(e.target.value) || 1);
+            setInterval(val);
+          }}
           className="border border-gray-300 rounded px-2 py-1 w-20 text-sm"
         />
         <span className="capitalize text-sm text-gray-700">{frequency}</span>
