@@ -1,12 +1,60 @@
-# React + Vite
+# 📅 Recurring Date Picker — React + Vite + Tailwind + Jotai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **reusable recurring date picker** inspired by the TickTick app.  
+Users can pick recurring schedules like daily, weekly, monthly, or yearly — with flexible custom rules and a live preview of generated dates.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** — modern component-based UI
+- **Vite** — fast dev + build tooling
+- **Tailwind CSS** — utility-first styling
+- **Jotai** — simple atomic state management
+- **date-fns** — date calculation helpers
+- **Vitest** — unit testing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✅ Features
+
+- **Frequencies:** Daily, Weekly, Monthly, Yearly
+- **Custom Rules:** Every X days/weeks/months/years, multiple weekdays, nth weekday patterns
+- **Date Range:** Start date & optional end date
+- **Mini Calendar Preview:** Displays upcoming generated dates in real time
+- **Reusable Structure:** Split into clean, reusable React components
+- **Tested Logic:** Core date generator covered with unit tests
+
+---
+
+## 📂 Project Structure
+
+src/
+├── components/
+│ ├── RecurrenceOptions.jsx
+│ ├── CustomizationOptions.jsx
+│ ├── DateRangePicker.jsx
+│ └── CalendarPreview.jsx
+├── store/
+│ └── atom.js
+├── utils/
+│ ├── generateDates.js
+│ └── generateDates.test.js
+├── App.jsx
+
+
+---
+
+## ⚡️ Getting Started
+
+
+1️⃣ **Install dependencies**
+```bash
+npm install
+
+npm run dev
+
+npm run test
+
+## 👋 Author- Jagriti Sachdeva
+**This is part of a frontend assignment.**
