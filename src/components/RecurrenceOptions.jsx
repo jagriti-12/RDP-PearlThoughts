@@ -7,18 +7,22 @@ export default function RecurrenceOptions() {
   const options = ['daily', 'weekly', 'monthly', 'yearly'];
 
   return (
-    <div className="flex gap-4 p-4">
+    <div className="flex flex-wrap gap-2">
       {options.map((option) => (
-        <label key={option} className="flex items-center space-x-2">
-          <input
-            type="radio"
-            name="frequency"
-            value={option}
-            checked={frequency === option}
-            onChange={() => setFrequency(option)}
-          />
-          <span className="capitalize">{option}</span>
-        </label>
+        <button
+          key={option}
+          type="button"
+          onClick={() => setFrequency(option)}
+          className={`px-4 py-2 rounded-full border text-sm capitalize transition-colors mb-4
+            ${
+              frequency === option
+                ? 'bg-blue-100 text-blue-700 border-blue-400'
+                : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+            }
+          `}
+        >
+          {option}
+        </button>
       ))}
     </div>
   );

@@ -28,17 +28,24 @@ export default function CalendarPreview() {
   });
 
   return (
-    <div className="p-4 border-t border-gray-300">
-      <h2 className="text-lg font-bold mb-2">Preview:</h2>
-      {dates.length === 0 ? (
-        <p className="text-gray-500">No dates to display yet.</p>
-      ) : (
-        <ul className="list-disc list-inside">
-          {dates.map((date) => (
-            <li key={date}>{date}</li>
-          ))}
-        </ul>
-      )}
+    <div className="space-y-2">
+      <p className="text-xs uppercase text-gray-500 font-medium">
+        Upcoming Dates
+      </p>
+
+      <div className="border border-gray-200 rounded-md bg-gray-50 p-3 max-h-40 overflow-y-auto text-sm">
+        {dates.length === 0 ? (
+          <p className="text-gray-400 italic">No dates to display yet.</p>
+        ) : (
+          <ul className="space-y-1">
+            {dates.map((date) => (
+              <li key={date} className="text-gray-700">
+                {date}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,16 +1,19 @@
 import { atom } from 'jotai';
 
-// Frequency: daily, weekly, monthly, yearly
+// Frequency: 'daily', 'weekly', 'monthly', 'yearly'
 export const frequencyAtom = atom('daily');
 
-// Interval: every X units
-export const intervalAtom = atom(0);
+// Interval: every X units (starts at 1, never 0)
+export const intervalAtom = atom(1);
 
-// Selected days of week
+// Selected days of week for 'weekly'
 export const daysOfWeekAtom = atom([]);
 
-// Nth weekday pattern (like 2nd Tuesday)
-export const nthWeekdayAtom = atom(null);
+// Nth weekday pattern for 'monthly'
+export const nthWeekdayAtom = atom({
+  week: '',
+  day: '',
+});
 
 // Date range
 export const startDateAtom = atom('');
