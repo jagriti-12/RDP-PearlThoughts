@@ -1,5 +1,6 @@
 import './App.css';
 import './index.css';
+import { Analytics } from "@vercel/analytics/next"
 import RecurrenceOptions from './components/RecurrenceOptions';
 import CustomizationOptions from './components/CustomizationOptions';
 import DateRangePicker from './components/DateRangePicker';
