@@ -1,4 +1,4 @@
-# 📅 Recurring Date Picker — React + Vite + Tailwind + Jotai
+# 📅 Recurring Date Picker
 
 A **reusable recurring date picker** inspired by the TickTick app.  
 Users can pick recurring schedules like daily, weekly, monthly, or yearly — with flexible custom rules and a live preview of generated dates.
@@ -30,23 +30,41 @@ Users can pick recurring schedules like daily, weekly, monthly, or yearly — wi
 ## 📂 Project Structure
 
 src/
+
 ├── components/
+
 │ ├── RecurrenceOptions.jsx
+
 │ ├── CustomizationOptions.jsx
+
 │ ├── DateRangePicker.jsx
+
 │ └── CalendarPreview.jsx
+
 ├── store/
+
 │ └── atom.js
+
 ├── utils/
+
 │ ├── generateDates.js
+
 │ └── generateDates.test.js
+
 ├── App.jsx
 
 
 ---
 
-## ⚡️ Getting Started
 
+## 👋 Author- Jagriti
+**This is part of a frontend assignment.**
+
+---
+
+
+## ⚡️ Getting Started
+---
 
 1️⃣ **Install dependencies**
 ```bash
@@ -55,6 +73,4 @@ npm install
 npm run dev
 
 npm run test
-
-## 👋 Author- Jagriti Sachdeva
-**This is part of a frontend assignment.**
+---
